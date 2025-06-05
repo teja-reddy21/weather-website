@@ -1,0 +1,51 @@
+.nav-sidebar {
+  width: 220px;
+  height: calc(100vh - 40px);
+  background-color: #1e1e2f;
+  color: white;
+  padding: 20px 0;
+  margin: 20px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+}
+.nav-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-sidebar img {
+  width: 100px;
+  margin-bottom: 40px;
+}
+
+.nav-sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.nav-sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.nav-sidebar li:hover {
+  background-color: #292947;
+}
+.nav-sidebar ion-icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.nav-sidebar span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.logout-item {
+  margin-top: 30px; /* adds space above logout */
+  border-top: 1px solid #444; /* optional separator line */
+  padding-top: 20px; /* padding inside for nicer spacing */
+}
