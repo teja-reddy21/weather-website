@@ -5,7 +5,7 @@ function Header() {
    <section className='header-section'>
     <div>
         <ion-icon name="location-outline"></ion-icon>
-        <span>Kadapa,india</span>
+        <span>Kadapa, india</span>
     </div>
     <div>
         <ion-icon name="search-outline"></ion-icon>
