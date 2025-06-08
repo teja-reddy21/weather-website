@@ -3,9 +3,10 @@ import './navbar.css'
 import logo from "../../assets/logo.png"
 function NavBar() {
   return (
-   <section className='nav-sidebar'>
+   <section className='nav-section'>
     <nav>
     <img src={logo} alt=''/>
+      
     <ul>
         <li>
             <ion-icon name="home-outline"></ion-icon>
@@ -31,11 +32,14 @@ function NavBar() {
             <ion-icon name="call-outline"></ion-icon>
             <span>Phone</span>
         </li>
-        <li className="logout-item">
+       
+    
+        <li>
             <ion-icon name="exit-outline"></ion-icon>
             <span>Logout</span>
         </li>
-    </ul>
+     </ul>
+    
     </nav>
    </section>
    )

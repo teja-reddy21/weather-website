@@ -1,51 +1,54 @@
-.nav-sidebar {
-  width: 220px;
-  height: calc(100vh - 40px);
-  background-color: #1e1e2f;
-  color: white;
-  padding: 20px 0;
-  margin: 20px 0;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  position: relative;
+.nav-section {
+  position: absolute;
+  height: 100;
+  min-width: 100px;
+  top: 50%;
+  left: 2%;
+ 
+  transform: translate(-3%, -50%);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+ 
+  animation-delay: 0.2s;
 }
-.nav-sidebar nav {
+
+.nav-section nav {
+  height: 100%;
+  padding: 50px 20px 50px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.nav-sidebar img {
-  width: 100px;
-  margin-bottom: 40px;
+.nav-section nav img {
+  align-self: center;
+  margin: 0 auto;
 }
 
-.nav-sidebar ul {
+.nav-section nav ul {
+  position: relative;
   list-style: none;
-  padding: 0;
-  width: 100%;
 }
-.nav-sidebar li {
+
+.nav-section nav ul li {
   display: flex;
   align-items: center;
-  padding: 12px 20px;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 3.3rem;
   cursor: pointer;
-  transition: background 0.3s;
-}
-.nav-sidebar li:hover {
-  background-color: #292947;
-}
-.nav-sidebar ion-icon {
-  font-size: 20px;
-  margin-right: 15px;
+  transition: 0.5s;
 }
 
-.nav-sidebar span {
-  font-size: 16px;
-  font-weight: 500;
+.nav-section nav ul li span {
+  font-size: 1.1rem;
 }
-.logout-item {
-  margin-top: 30px; /* adds space above logout */
-  border-top: 1px solid #444; /* optional separator line */
-  padding-top: 20px; /* padding inside for nicer spacing */
+
+.nav-section nav ul li:hover {
+  color: #409ac7;
 }
