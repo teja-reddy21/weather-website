@@ -1,11 +1,17 @@
 
 
+import { Dashboard } from './components/DashBoard/Dashboard';
+import Header from './components/Header/Header';
 import NavBar from './components/Navbar/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+         <Header/>
+        <NavBar/>
+        <Dashboard/>
+    
+    
     </div>
   );
 }
