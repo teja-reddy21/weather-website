@@ -145,7 +145,7 @@ export const Dashboard = () => {
           <div>
             <img src={Rain} alt=''/>
             <div>
-              <span>Manchester</span>
+              <span>Kadapa</span>
               <span>Cloudy, High: 11 Low: 18</span>
             </div>
           </div>
