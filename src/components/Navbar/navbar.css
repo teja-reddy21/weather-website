@@ -4,7 +4,6 @@
   min-width: 100px;
   top: 50%;
   left: 2%;
- 
   transform: translate(-3%, -50%);
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -12,8 +11,11 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
- 
-  animation-delay: 0.2s;
+  width: 200px;
+  margin: 15px 10px 0 0;
+  animation: slideInTop 0.6s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .nav-section nav {
