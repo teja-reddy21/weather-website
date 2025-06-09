@@ -1,4 +1,9 @@
-
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   /* position: relative; */
@@ -9,4 +14,51 @@ body {
     rgba(3, 1, 50, 1) 100.2%
   );
   overflow: hidden;
+}
+@keyframes slide-up {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  100% {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%) translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-3%) translateY(-50%);
+    opacity: 1;
+  }
+}
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%) translateX(-3%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50%) translateX(-3%);
+    opacity: 1;
+  }
 }
